@@ -1,0 +1,120 @@
+.album-container {
+    display: flex;
+    background-color: white;
+    border-radius: 5px;
+    padding: 40px;
+    max-width: 100%;
+}
+
+.album-container img {
+    transform: translateZ(0);
+    transition: transform 0.25s ease-out;
+    margin-bottom: 40px;
+    width: 100%;
+    max-width: 756px;
+}
+
+.album-container img:hover {
+    transform: scale(1.05);
+}
+
+.album-infos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.show_tracklist {
+    width: 100%;
+    margin-top: 30px;
+}
+
+.btn-open-modal {
+    width: 100%;
+    padding: 20px;
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+    transition: all 0.4s;
+    font-family: inherit;
+    background-color: #74329c;
+    color: white;
+}
+
+h2 {
+    font-weight: 300;
+    line-height: 40px;
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+.tracklist {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: black;
+    z-index: 10;
+    transition: width 1s ease;
+    overflow: hidden;
+}
+
+.tracklist h2 {
+    font-size: 50px;
+    line-height: 50px;
+    margin-bottom: 40px;
+    color: white;
+}
+
+.songs {
+    color: white;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.btn-close-modal {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    padding: 17px 25px;
+    border-radius: 800px;
+    font-size: 30px;
+    cursor: pointer;
+    border: none;
+    transition: all 0.4s;
+    font-family: inherit;
+}
+
+.btn-close-modal:hover {
+    background-color: #d9bfe6;
+    color: white;
+}
+
+.btn-open-modal:hover {
+    background-color: #d9bfe6;
+    color: white;
+}
+
+.info p {
+    text-align: justify;
+    margin-bottom: 10px;
+}
+
+
+@media (max-width: 1000px) {
+    .songs p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 600px) {
+    .songs p {
+        font-size: 12px;
+    }
+}
