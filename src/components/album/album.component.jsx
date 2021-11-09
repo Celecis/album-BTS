@@ -24,6 +24,12 @@ class Album extends React.Component {
             <img alt="album" src={this.state.album.imgUrl} />
             <span className="releaseDate">{this.state.album.releaseDate}</span>
             <h2 className="album-name">{this.state.album.name}</h2>
+            {this.state.album.version && (
+              <p className="version">Version: {this.state.album.version}</p>
+            )}
+            {this.state.album.extra && (
+              <p className="extra">{this.state.album.extra}</p>
+            )}
             <span className="info">
               {this.state.album.info.map((p) => (
                 <p>{p}</p>

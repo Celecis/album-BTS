@@ -106,6 +106,27 @@ h2 {
     margin-bottom: 10px;
 }
 
+p.version,
+p.extra {
+    text-align: center;
+    font-size: 2em;
+    font-weight: 300;
+    background-color: #74329c;
+    color: white;
+    margin-bottom: 50px;
+    padding: 20px 0px;
+}
+
+p.extra {
+    text-align: center;
+    font-size: 1em;
+    font-weight: 300;
+    background-color: red;
+    color: white;
+    margin-bottom: 50px;
+    padding: 10px 0px;
+}
+
 
 @media (max-width: 1000px) {
     .songs p {

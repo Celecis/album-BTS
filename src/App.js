@@ -3,6 +3,7 @@ import "./App.css";
 
 import data from "./data.js";
 import band from "./band.js";
+import missing from "./missing.js";
 import { AlbumList } from "./components/album-list/album-list.component";
 
 class App extends React.Component {
@@ -12,6 +13,7 @@ class App extends React.Component {
     this.state = {
       band: band,
       albuns: data,
+      missing: missing,
     };
   }
 
@@ -46,6 +48,8 @@ class App extends React.Component {
         </div>
         <h3 className="discography">DISCOGRAPHY: </h3>
         <AlbumList albums={this.state.albuns} />
+        <h3 className="discography">MISSING: </h3>
+        <AlbumList albums={this.state.missing} />
       </div>
     );
   }
